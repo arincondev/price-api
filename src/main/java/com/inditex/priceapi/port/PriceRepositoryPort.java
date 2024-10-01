@@ -1,11 +1,12 @@
 package com.inditex.priceapi.port;
 
-import com.inditex.prices.domain.Price;
-
 import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
+
+import com.inditex.priceapi.domain.Price;
+
 
 @Repository
 public interface PriceRepositoryPort {

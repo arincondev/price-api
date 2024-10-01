@@ -1,7 +1,7 @@
 package com.inditex.priceapi.adapters.in;
 
 import com.inditex.priceapi.port.PriceRepositoryPort;
-import com.inditex.prices.domain.Price;
+import com.inditex.priceapi.domain.Price;
 import com.inditex.priceapi.service.PriceService; // Asegúrate de importar correctamente el servicio
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

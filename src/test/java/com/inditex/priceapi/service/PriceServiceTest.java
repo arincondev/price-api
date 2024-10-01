@@ -1,7 +1,7 @@
 package com.inditex.priceapi.service;
 
 import com.inditex.priceapi.port.PriceRepositoryPort;
-import com.inditex.prices.domain.Price;
+import com.inditex.priceapi.domain.Price;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

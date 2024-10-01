@@ -1,14 +1,14 @@
 package com.inditex.priceapi.adapters.out;
 
-import com.inditex.priceapi.port.PriceRepositoryPort;
-import com.inditex.prices.domain.Price;
-import lombok.RequiredArgsConstructor;
-
-import org.springframework.stereotype.Component;
-
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import org.springframework.stereotype.Component;
+
+import com.inditex.priceapi.port.PriceRepositoryPort;
+import com.inditex.priceapi.domain.Price;
+import lombok.RequiredArgsConstructor;
 
 @Component
 @RequiredArgsConstructor
@@ -23,7 +23,7 @@ public class PriceRepositoryAdapter implements PriceRepositoryPort {
 
         return priceEntities.stream()
             .map(this::toDomain)
-            .collect(Collectors.toList());
+            .toList();
     }
 
     // Conversión de PriceEntity a Price

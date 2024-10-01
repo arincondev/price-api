@@ -1,14 +1,14 @@
 package com.inditex.priceapi.service;
 
-import com.inditex.priceapi.port.PriceRepositoryPort;
-import com.inditex.prices.domain.Price;
-import lombok.RequiredArgsConstructor;
-
-import org.springframework.stereotype.Service;
-
 import java.time.LocalDateTime;
 import java.util.Comparator;
 import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.inditex.priceapi.port.PriceRepositoryPort;
+import com.inditex.priceapi.domain.Price;
+import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor

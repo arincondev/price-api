@@ -1,6 +1,6 @@
 package com.inditex.priceapi.adapters.out;
 
-import com.inditex.prices.domain.Price;
+import com.inditex.priceapi.domain.Price;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
