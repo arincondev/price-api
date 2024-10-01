@@ -1,8 +1,11 @@
 package com.inditex.priceapi.adapters.in;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.inditex.priceapi.adapters.out.JpaPriceRepository;
-import com.inditex.priceapi.adapters.out.PriceEntity;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,12 +15,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.inditex.priceapi.adapters.out.JpaPriceRepository;
+import com.inditex.priceapi.adapters.out.PriceEntity;
 
 @SpringBootTest
 @AutoConfigureMockMvc

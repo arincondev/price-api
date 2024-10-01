@@ -1,8 +1,11 @@
 package com.inditex.priceapi.adapters.in;
 
-import com.inditex.priceapi.port.PriceRepositoryPort;
-import com.inditex.priceapi.domain.Price;
-import com.inditex.priceapi.service.PriceService; // Asegúrate de importar correctamente el servicio
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -10,12 +13,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.ResponseEntity;
 
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.when;
+import com.inditex.priceapi.domain.Price;
+import com.inditex.priceapi.service.PriceService;
 
 class PriceControllerTest {
 
